@@ -4,7 +4,7 @@
   //yeni müşteri gelri parası 50tl 
   //parasını dolar yapmak istiyor kaç dolar olduğunu merak ediyor
 
-  import 'methods.dart';
+  
 
 void main() {
   final int user1 = 20;         //müşteri paraları tanımlandı
