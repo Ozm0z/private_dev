@@ -6,7 +6,7 @@ void main() {
 
   //100 den büyük olanlara hoşgeldiniz de
   if (money1 > 100) {
-    print("Hoşgeldiniz!");
+    print("Hoşgeldiniz!"); 
   }
   if (money2 > 100) {
     print("Hoşgeldiniz!");
