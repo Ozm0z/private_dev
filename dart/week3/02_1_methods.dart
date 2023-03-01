@@ -27,10 +27,15 @@ void main() {
   //parasını dolar yapmak istiyor kaç dolar olduğunu merak ediyor
 
   final int newUserMoney = 50;
-  double result = converToDollar(newUserMoney);
+  int result = converToDollar(newUserMoney);
   print(result);
   final newResult = convertToStandartDollar(100,dollarIndex: 13);
+  final newResult2 = convertToStandartDollar(100);
+  final newResult3 = convertToEuro(userMoney: 500);
+  final aa = sayHello("aa");
+   print(aa);
 }
+
 //bana dolar hesapla ben sana söylemezsm her zaman 13 al
 void controlUserMoney(int money, int minimumValue){
 
@@ -42,10 +47,18 @@ void controlUserMoney(int money, int minimumValue){
   }
 }
 
-double converToDollar(int userMoney){
-  return userMoney / 13;
+int converToDollar(int userMoney){
+  return userMoney ~/ 13;
 }
 
-double convertToStandartDollar (int userMoney, {int dollarIndex = 14}){
-  return userMoney / dollarIndex;
+int convertToStandartDollar (int userMoney, {int dollarIndex = 14}){
+  return userMoney ~/ dollarIndex;
+}
+
+
+int convertToEuro ({required int userMoney, int dollarIndex = 14}){
+  return userMoney ~/ dollarIndex;
+}
+String sayHello(String name){
+  return "hello $name";
 }

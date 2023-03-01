@@ -12,7 +12,7 @@ void main() {
     print("Hoşgeldiniz!");
   }
 
-  String namr = "";
+  String name = "";
 
   List<int> moneys = [100, 110, 500, 200, 300];
   final List<int> newMoneys = [100, 110, 500, 200, 300];
@@ -89,5 +89,21 @@ void main() {
       }
     }
 
-    
+    print('aaaa');
+    List<dynamic> user = [1, "a", true]; // içerisinde farklı türden veriler olabilir ama önerilmez
+
+    for (var item in user) {
+      print(item);
+    }
+
+    //onun yerine şu önerilir
+    List<String> userNames = ["ali", "mehmet", "ayşe"];
+
+    userNames.contains("veli");
+    print("test $userNames");
+
+  for (var item in userNames) {
+    if (item == "veli");
+    print("veli var");
   }
+}
