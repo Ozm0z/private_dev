@@ -76,7 +76,7 @@ print("--------------" * 10);
     //müşteri son gelen kişinin city sine göre kampanya yapacak eğer istanbul ise
   
   if (user3.city == "null") {
-    print("müşteri şehir bilgisi vermemiş");
+    print("müşteri şehir bilgisi vermemisş");
   }
   else{
     if (user3.city!.isEmpty) {
